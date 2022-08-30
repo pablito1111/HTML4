@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 4 HTML</title>
+    <link rel="icon" href="./imagenes/Python.ico"><!--agrega icono en solapa navegador-->
+</head>
+<body>
+<header>
+    <h1>Clase HTML 4</h1>
+</header>
+<main>
+<h2>Formulario de registro</h2>
+<form action="show_data.html">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre">
+    <br><br>
+    <label for="apellido">Apellido</label>
+    <input type="text" name="apellido" id="apellido" placeholder="ingrese su apellido">
+    <br><br>
+    <label for="localidad">Localidad</label>
+    <input type="text" name="localidad" id="localidad" value="CABA">
+    <br><br>
+    <label for="fechan">Fecha nacimiento</label>
+    <input type="date" name="fechan" id="fechan">
+    <br><br>
+    <label for="edad">Edad</label>
+    <input type="number" name="edad" id="edad">
+    <br><br>
+    <label for="altura">Altura</label>
+    <input type="number" step="0.01" name="altura" id="altura"><!--permite decimales-->
+    <br><br>
+    <label for="sexo">Sexo</label><!--tipo radio son opciones excluyentes-->
+        <input type="radio" name="sexo" value="1">Masculino
+        <input type="radio" name="sexo" value="2">Femenino
+        <input type="radio" name="sexo" value="3">Otro
+    <br><br>
+    <label for="deportes">Deportes preferidos (marque todos los que correspondan)</label>
+    <br>
+        <input type="checkbox" name="deportes" value="1">Futbol
+        <input type="checkbox" name="deportes" value="2">Basket
+        <input type="checkbox" name="deportes" value="3">Tenis
+        <input type="checkbox" name="deportes" value="4">Golf
+    <br><br>
+    <label for="email">email</label>
+    <input type="email" name="email" id="email">
+    <br><br>
+    <label for="horario">Horario preferido:</label><!--menu de opciones predeterminadas-->
+    <select name="horario" id="horario">
+        <option value="1">Mañana</option>
+        <option value="2">Tarde</option>
+        <option value="3">Noche</option>
+    </select>
+    <br><br>
+    <label for="password">Contraseña</label>
+    <input type="password" name="password" id="password">
+    <br><br>
+    <label for="comentarios">Comentarios</label>
+    <br>
+    <textarea name="comentarios" id="comentarios" cols="30" rows="4" maxlength="100" placeholder="Ingrese sus comentarios (máximo 100 caracteres)"></textarea>
+    <br>
+    <input type="submit" value="Enviar"><!--es el boton de envio del formulario-->
+    <input type="reset" value="Borrar"><!--boton para borrar el formulario-->
+</form>
+
+</main>
+<footer></footer>
+</body>
+</html>
